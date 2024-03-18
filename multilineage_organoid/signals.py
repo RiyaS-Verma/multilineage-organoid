@@ -488,8 +488,7 @@ def calc_signal_stats(time: np.ndarray,
         time_finite = time[sigmask]
 
         peak_indicies = peak_local_max(signal_finite,
-                                       min_distance=samples_around_peak,
-                                       indices=True)
+                                       min_distance=samples_around_peak)
 
         peaks = refine_signal_peaks(time_finite, signal_finite, peak_indicies,
                                     offset=offset_st,

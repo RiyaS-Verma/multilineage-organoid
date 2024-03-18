@@ -301,7 +301,7 @@ class DataReader(object):
         # print('Area columns: {}'.format(area_indices))
         # print('Mean columns: {}'.format(mean_indices))
 
-        time = df.iloc[:, time_idx].values.astype(np.float)
+        time = df.iloc[:, time_idx].values.astype(np.float64)
         areas = df.iloc[:, area_indices].values
         means = df.iloc[:, mean_indices].values
 

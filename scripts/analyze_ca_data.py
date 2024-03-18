@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-
+import os
+os.environ['OPENBLAS_NUM_THREADS'] = '60'
 """ Signal processing to filter cardiac calcium traces
 
 Process the data and write a stat file:
